@@ -5,7 +5,7 @@ class Atuendo {
     ArrayList<Accesorio> accesorios = new ArrayList<>();
 
 
-    Atuendo() {
+    void generarAtuendo() {
         
     }
 }
