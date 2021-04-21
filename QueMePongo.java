@@ -1,21 +1,21 @@
 public class QueMePongo {
     public static void main(String[] args) {
         while(true) {           
-            switch (Prenda.seleccionarCategoria() - 1) {
+            switch (FabricaDePrenda.seleccionarCategoria() - 1) {
                 case -1:
                     System.out.println("Hubo un error al elegir categoria, intente nuevamente.");
                     break;
-                case SUPERIOR:
-                    Prenda nuevaPrendaSuperior = new PrendaSuperior().cargarPrenda();
+                case Categoria.SUPERIOR:
+                    Prenda nuevaPrendaSuperior = new FabricaDePrendaSuperior().cargarPrenda();
                     break;
-                case INFERIOR:
-                    Prenda nuevaPrendaInferior = new PrendaInferior().cargarPrenda();
+                case Categoria.INFERIOR:
+                    Prenda nuevaPrendaInferior = new FabricaDePrendaInferior().cargarPrenda();
                     break;
-                case CALZADO:
-                    Prenda nuevoCalzado = new Calzado().cargarPrenda();
+                case Categoria.CALZADO:
+                    Prenda nuevoCalzado = new FabricaDeCalzado().cargarPrenda();
                     break;
-                case ACCESORIO:
-                    Prenda nuevoAccesorio = new Accesorio().cargarPrenda();
+                case Categoria.ACCESORIO:
+                    Prenda nuevoAccesorio = new FabricaDeAccesorio().cargarPrenda();
                     break;
             }
 
